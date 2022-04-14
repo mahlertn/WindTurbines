@@ -96,7 +96,7 @@
 
         pointToLayer: function(feature, latlng) {
             var id = 0;
-            if (feature.properties.category == "Wind Turbine") { id = 0; }
+            if (feature.properties.retrofit == "0") { id = 0; }
             else { id = 2;} // All other property types from attribute table
             return L.marker(latlng, {icon: L.divIcon({className: 'fab fa-solid fa-wind-turbine marker-color-' + (id + 1).toString() })});
         },
