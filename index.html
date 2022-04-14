@@ -67,7 +67,7 @@
     L.tileLayer('https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=beca39c054504fe5af31dd3aef4a3f02').addTo(mymap);
 
       // 3. Add GeoJSON Data
-      // Null variable that will hold Airbnb data
+      // Null variable that will hold data
       var data = null;
       // add several extra spaces here.
       //steps 4, 5, etc. will be inserted in this line location.
@@ -114,7 +114,7 @@
       //so...
       function setColor(density) {
           var id = 0;
-          if (density > 1201) { id = 4; }
+          if (density > 12001) { id = 4; }
           else if (density > 5000 && density <= 12000) { id = 3; }
           else if (density > 3500 && density <= 5000) { id = 2; }
           else if (density > 1000 &&  density <= 3500) { id = 1; }
